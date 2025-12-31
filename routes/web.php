@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [VoteController::class, 'index'])->name('home');
 
 Route::match(['get','post'], '/vote', [VoteController::class, 'store'])->name('vote.store');
 
