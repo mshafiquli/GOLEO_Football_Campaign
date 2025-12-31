@@ -598,6 +598,7 @@
             font-size: 20px;
             font-weight: 700;
         }
+
         .vote-modal-header2 {
             background: linear-gradient(135deg, #2e5cdf, #213e9b);
             padding: 16px 20px;
@@ -651,7 +652,24 @@
             margin-bottom: 18px;
         }
 
+        .switch-tabs2 {
+            display: flex;
+            background: #f3f3f3;
+            border-radius: 14px;
+            padding: 4px;
+            margin-bottom: 18px;
+        }
+
         .switch-tabs .tab {
+            flex: 1;
+            border: none;
+            background: none;
+            padding: 10px 0;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .switch-tabs2 .tab {
             flex: 1;
             border: none;
             background: none;
@@ -662,6 +680,11 @@
 
         .switch-tabs .active {
             background: #ffc400;
+            color: #fff;
+        }
+
+        .switch-tabs2 .active {
+            background: #2e5cdf;
             color: #fff;
         }
 
@@ -687,7 +710,7 @@
         }
 
 
-              .submit-btn2 {
+        .submit-btn2 {
             width: 100%;
             background: #2563eb;
             border: none;
@@ -717,6 +740,11 @@
             padding: 35px 20px 30px;
         }
 
+        .success-header2 {
+            background: linear-gradient(135deg, #2e5cdf, #213e9b);
+            padding: 35px 20px 30px;
+        }
+
         .check-circle {
             width: 70px;
             height: 70px;
@@ -737,8 +765,20 @@
             border-radius: 10px;
         }
 
+        .whatsapp-btn2 {
+            background: #2e5cdf;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+
         .whatsapp-btn:hover {
             background: #e09500;
+            color: #fff;
+        }
+
+        .whatsapp-btn2:hover {
+                     background: #2e5cdf;
             color: #fff;
         }
 
