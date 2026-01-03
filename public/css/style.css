@@ -205,17 +205,17 @@
 
         /* Responsive Design */
         @media (max-width: 992px) {
-            .ittihad-side {
+            /* .ittihad-side {
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
             }
 
             .hilal-side {
                 clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0 100%);
-            }
+            } */
 
-            .voting-container {
+            /* .voting-container {
                 flex-direction: column;
-            }
+            } */
 
             .vs-badge {
                 width: 80px;
@@ -246,6 +246,34 @@
             }
         }
 
+        /* Ensure modal buttons are always clickable */
+        .vote-btn {
+            position: relative;
+            z-index: 20;
+        }
+
+        /* Prevent overlay blocking touches */
+        .vs-badge {
+            pointer-events: none;
+        }
+
+        /* Fix mobile stacking order */
+        .team-side {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* For tablet widths */
+        @media (max-width: 1024px) {
+            .vs-badge {
+                z-index: 1;
+            }
+
+            .team-side {
+                z-index: 10;
+            }
+        }
+
         @media (max-width: 576px) {
             .team-logo {
                 width: 120px;
@@ -254,8 +282,8 @@
             }
 
             .team-logo img {
-                max-width: 90px;
-                max-height: 90px;
+                width: 113px;
+                height: 145px;
             }
 
             .team-logo-number {
@@ -778,7 +806,7 @@
         }
 
         .whatsapp-btn2:hover {
-                     background: #2e5cdf;
+            background: #2e5cdf;
             color: #fff;
         }
 
